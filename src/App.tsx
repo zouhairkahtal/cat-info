@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { HomePage } from "./views/HomePage";
 import { CatGallery } from "./views/CatGallery";
 import { Layout } from "./layout";
+import { DogPage } from "./views/DogPage";
 
 
 
@@ -17,8 +18,16 @@ function App() {
           element: <HomePage/>,
         },
         {
+          path:"HomePage",
+          element: <HomePage/>,
+        },
+        {
           path:"Gallery",
           element: <CatGallery/>,
+        },
+        {
+          path:"DogPage",
+          element: <DogPage/>,
         },
         {
           path: "*",
