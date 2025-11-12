@@ -3,6 +3,7 @@ import { HomePage } from "./views/HomePage";
 import { CatGallery } from "./views/CatGallery";
 import { Layout } from "./layout";
 import { DogPage } from "./views/DogPage";
+import { CatPage } from "./views/CatPage";
 
 
 
@@ -28,6 +29,10 @@ function App() {
         {
           path:"DogPage",
           element: <DogPage/>,
+        },
+        {
+          path:"catPage",
+          element: <CatPage/>,
         },
         {
           path: "*",
