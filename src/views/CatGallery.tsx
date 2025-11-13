@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
-import CatLoading from "../assets/icon's/catloawding.svg";
-import CatAdd from "../assets/icon's/CatAdd.svg";
+import CatLoading from "../assets/icon/catloawding.svg";
+import CatAdd from "../assets/icon/CatAdd.svg";
 
 export function CatGallery() {
   const [count, setCount] = useState(20);

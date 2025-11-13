@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import DogPageImage from "../assets/DogPage/DogPageImage.png";
-import GoBack from "../assets/icon's/back.svg";
+import GoBack from "../assets/icon/back.svg";
 
 export function DogPage() {
   return (
