@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import DogPageImage from "../assets/CatPageImage/CatPageImage.png";
-import GoBack from "../assets/icon/back-buttons-orange.svg";
+import GoBack from "../../public/icon/back-buttons-orange.svg";
 
 export function CatPage() {
   return (
