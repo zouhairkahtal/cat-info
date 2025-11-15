@@ -17,7 +17,11 @@ export function Nav(){
     Gallery
     </li>
     </NavLink>
+
+    <NavLink to={"/CatInfo"}>
+
 <li className="backdrop-brightness-90  text-white py-2 px-8 rounded-full text-lg font-semibold  hover:scale-105 ease-out duration-300 max-[650px]:hidden">Info</li>
+    </NavLink>
     </ul>
     </>
     )

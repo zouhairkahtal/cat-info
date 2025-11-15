@@ -78,12 +78,17 @@ export function HomePage() {
         </NavLink>
               
               <div className="hidden max-[650px]:flex  h-36 w-full items-center justify-center gap-5 ">
+
+<NavLink to={"/CatInfo"}>
                 <button className="border border-orange-900 bg-orange-400 text-orange-900 py-2 px-8 rounded-full text-lg font-semibold  hover:scale-105 ease-out duration-300 ">
                   Info
                 </button>
+</NavLink>
+          <NavLink to={"/Gallery"}>
                 <button className="border border-orange-900 bg-orange-400  text-orange-900 py-2 px-8 rounded-full text-lg font-semibold  hover:scale-105 ease-out duration-300 ">
                   Gallery
                 </button>
+            </NavLink>      
               </div>
             </div>
           </div>

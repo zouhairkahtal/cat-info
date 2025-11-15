@@ -4,6 +4,7 @@ import { CatGallery } from "./views/CatGallery";
 import { Layout } from "./layout";
 import { DogPage } from "./views/DogPage";
 import { CatPage } from "./views/CatPage";
+import { CAtInfo } from "./views/CatInfo";
 
 
 
@@ -33,6 +34,10 @@ function App() {
         {
           path:"catPage",
           element: <CatPage/>,
+        },
+        {
+          path:"CatInfo",
+          element: <CAtInfo/>,
         },
         {
           path: "*",
