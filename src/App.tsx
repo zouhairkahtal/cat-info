@@ -5,6 +5,8 @@ import { Layout } from "./layout";
 import { DogPage } from "./views/DogPage";
 import { CatPage } from "./views/CatPage";
 import { CAtInfo } from "./views/CatInfo";
+import { DogGallery } from "./views/DogGallery";
+import { DogInfo } from "./views/DogInfo";
 
 
 
@@ -38,6 +40,14 @@ function App() {
         {
           path:"CatInfo",
           element: <CAtInfo/>,
+        },
+        {
+          path:"DogInfo",
+          element: <DogInfo/>,
+        },
+        {
+          path:"DogGallery",
+          element: <DogGallery/>,
         },
         {
           path: "*",
