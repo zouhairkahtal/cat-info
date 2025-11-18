@@ -3,9 +3,14 @@ import CatImage from "../assets/HomePageImage/HomePageCat.png";
 
 import { Nav } from "../components/nav";
 import { NavLink } from "react-router-dom";
-
+import { motion } from "motion/react"
 
 export function HomePage() {
+
+
+
+
+
   return (
     <>
       {/* <button className="bg-red-300">
@@ -33,27 +38,30 @@ export function HomePage() {
                 many breeds, each with unique traits
               </p>
               <NavLink to={"/DogPage"}>
-              <button className="py-2 px-5 bg-orange-400 rounded-full font-medium text-orange-900 ease-out duration-300 border border-orange-400  hover:bg-orange-900 hover:text-orange-400 hover:scale-110 ">
+              <motion.button   whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.95 }} className="py-2 px-5 bg-orange-400 rounded-full font-medium text-orange-900 ease-out duration-300 border border-orange-400  hover:bg-orange-900 hover:text-orange-400 hover:scale-110 ">
                 
                 Read More
               
-              </button>
+              </motion.button>
               </NavLink>  
 
               <div className="hidden max-[650px]:flex  h-36 w-full items-center justify-center gap-5">
                
                <NavLink to={"/DogInfo"}>
 
-                <button className="border border-orange-400 bg-orange-900 text-orange-400 py-2 px-8 rounded-full text-lg font-semibold  hover:scale-105 ease-out duration-300 ">
+                <motion.button   whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.95 }} className="border border-orange-400 bg-orange-900 text-orange-400 py-2 px-8 rounded-full text-lg font-semibold  hover:scale-105 ease-out duration-300 ">
                   Info
-                </button>
+                </motion.button>
                </NavLink>
 
                <NavLink to={"/DogGallery"}>
 
-                <button className="border border-orange-400 bg-orange-900  text-orange-400 py-2 px-8 rounded-full text-lg font-semibold  hover:scale-105 ease-out duration-300 ">
+                <motion.button   whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.95 }} className="border border-orange-400 bg-orange-900  text-orange-400 py-2 px-8 rounded-full text-lg font-semibold  hover:scale-105 ease-out duration-300 ">
                   Gallery
-                </button>
+                </motion.button>
                </NavLink>
               </div>
             </div>
@@ -81,22 +89,25 @@ export function HomePage() {
               </p>
         <NavLink to={"/CatPage"}>
 
-              <button className="py-2 px-5 bg-orange-900 rounded-full font-medium text-orange-400 ease-out duration-300 border border-orange-900  hover:bg-orange-400 hover:text-orange-900 hover:scale-110 ">
+              <motion.button   whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.95 }} className="py-2 px-5 bg-orange-900 rounded-full font-medium text-orange-400 ease-out duration-300 border border-orange-900  hover:bg-orange-400 hover:text-orange-900 hover:scale-110 ">
                 Read More
-              </button>
+              </motion.button>
         </NavLink>
               
               <div className="hidden max-[650px]:flex  h-36 w-full items-center justify-center gap-5 ">
 
 <NavLink to={"/CatInfo"}>
-                <button className="border border-orange-900 bg-orange-400 text-orange-900 py-2 px-8 rounded-full text-lg font-semibold  hover:scale-105 ease-out duration-300 ">
+                <motion.button   whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.95 }} className="border border-orange-900 bg-orange-400 text-orange-900 py-2 px-8 rounded-full text-lg font-semibold  hover:scale-105 ease-out duration-300 ">
                   Info
-                </button>
+                </motion.button>
 </NavLink>
           <NavLink to={"/Gallery"}>
-                <button className="border border-orange-900 bg-orange-400  text-orange-900 py-2 px-8 rounded-full text-lg font-semibold  hover:scale-105 ease-out duration-300 ">
+                <motion.button   whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.95 }} className="border border-orange-900 bg-orange-400  text-orange-900 py-2 px-8 rounded-full text-lg font-semibold  hover:scale-105 ease-out duration-300 ">
                   Gallery
-                </button>
+                </motion.button>
             </NavLink>      
               </div>
             </div>
