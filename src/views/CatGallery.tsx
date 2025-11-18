@@ -47,7 +47,11 @@ export function CatGallery() {
           disabled={isFetching}
           className="fixed z-50 top-6 right-6 bg-orange-500 text-white font-semibold p-2 rounded-full shadow-lg hover:bg-orange-700 transition disabled:opacity-50"
         >
-          {isFetching ? "Loading..." : <img className="w-5" src={CatAdd} alt="add" />}
+          {isFetching ? (
+            "Loading..."
+          ) : (
+            <img className="w-5" src={CatAdd} alt="add" />
+          )}
         </button>
 
         {/* GALLERY */}
@@ -77,7 +81,6 @@ export function CatGallery() {
               alt="cat"
               className="max-w-[90%] max-h-[90%] rounded-xl shadow-xl"
             />
-            
           </div>
         )}
       </div>

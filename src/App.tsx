@@ -8,8 +8,6 @@ import { CAtInfo } from "./views/CatInfo";
 import { DogGallery } from "./views/DogGallery";
 import { DogInfo } from "./views/DogInfo";
 
-
-
 function App() {
   const router = createBrowserRouter([
     {
@@ -19,35 +17,35 @@ function App() {
       children: [
         {
           index: true,
-          element: <HomePage/>,
+          element: <HomePage />,
         },
         {
-          path:"HomePage",
-          element: <HomePage/>,
+          path: "HomePage",
+          element: <HomePage />,
         },
         {
-          path:"Gallery",
-          element: <CatGallery/>,
+          path: "Gallery",
+          element: <CatGallery />,
         },
         {
-          path:"DogPage",
-          element: <DogPage/>,
+          path: "DogPage",
+          element: <DogPage />,
         },
         {
-          path:"catPage",
-          element: <CatPage/>,
+          path: "catPage",
+          element: <CatPage />,
         },
         {
-          path:"CatInfo",
-          element: <CAtInfo/>,
+          path: "CatInfo",
+          element: <CAtInfo />,
         },
         {
-          path:"DogInfo",
-          element: <DogInfo/>,
+          path: "DogInfo",
+          element: <DogInfo />,
         },
         {
-          path:"DogGallery",
-          element: <DogGallery/>,
+          path: "DogGallery",
+          element: <DogGallery />,
         },
         {
           path: "*",
@@ -60,11 +58,7 @@ function App() {
       ],
     },
   ]);
-  return (
- 
-      <RouterProvider router={router} />
-  
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

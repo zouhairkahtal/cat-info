@@ -1,11 +1,9 @@
-
-
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import dogLoading from "../../public/icon/dogLoawding.svg";
 import dogAdd from "../../public/icon/CatAdd.svg";
 
-export function DogGallery(){
+export function DogGallery() {
   const [count, setCount] = useState(20);
   const [selecteddog, setSelecteddog] = useState(null);
   const [popupVisible, setPopupVisible] = useState(false);
@@ -49,7 +47,11 @@ export function DogGallery(){
           disabled={isFetching}
           className="fixed z-50 top-6 right-6 bg-red-500 text-white font-semibold p-2 rounded-full shadow-lg hover:bg-red-700 transition disabled:opacity-50"
         >
-          {isFetching ? "Loading..." : <img className="w-5" src={dogAdd} alt="add" />}
+          {isFetching ? (
+            "Loading..."
+          ) : (
+            <img className="w-5" src={dogAdd} alt="add" />
+          )}
         </button>
 
         {/* GALLERY */}
@@ -79,7 +81,6 @@ export function DogGallery(){
               alt="dog"
               className="max-w-[90%] max-h-[90%] rounded-xl shadow-xl"
             />
-            
           </div>
         )}
       </div>

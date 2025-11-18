@@ -23,11 +23,11 @@ export function DogPage() {
             passing of time by noticing how scents in the air change throughout
             the day.
           </p>
-<NavLink to={"/DogInfo"}>
-          <button className="bg-white border border-white hover:text-white  text-red-500 font-semibold px-6 py-3 rounded-lg hover:bg-red-500 transition-all duration-200 max-[1175px]:hover:bg-transparent max-[1175px]:hover:text-red-500 max-[1175px]:bg-transparent max-[1175px]:hover:border-red-500 max-[1175px]:border-red-300 max-[1175px]:hover:border-2">
-            Info →
-          </button>
-</NavLink>
+          <NavLink to={"/DogInfo"}>
+            <button className="bg-white border border-white hover:text-white  text-red-500 font-semibold px-6 py-3 rounded-lg hover:bg-red-500 transition-all duration-200 max-[1175px]:hover:bg-transparent max-[1175px]:hover:text-red-500 max-[1175px]:bg-transparent max-[1175px]:hover:border-red-500 max-[1175px]:border-red-300 max-[1175px]:hover:border-2">
+              Info →
+            </button>
+          </NavLink>
         </div>
       </div>
     </>

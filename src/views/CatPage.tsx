@@ -20,14 +20,13 @@ export function CatPage() {
           </h2>
           <p className="text-lg mb-8 leading-relaxed max-[1175px]:text-orange-500">
             Cats may act mysterious, but they actually recognize their own names
-             they often just choose to ignore you when you call them!
+            they often just choose to ignore you when you call them!
           </p>
-<NavLink to={"/CatInfo"}>
-
-          <button className="bg-white border border-white hover:text-white  text-orange-500 font-semibold px-6 py-3 rounded-lg hover:bg-orange-500 transition-all duration-200 max-[1175px]:hover:bg-transparent max-[1175px]:hover:text-orange-500 max-[1175px]:bg-transparent max-[1175px]:hover:border-orange-500 max-[1175px]:border-orange-300 max-[1175px]:hover:border-2">
-            Info →
-          </button>
-</NavLink>
+          <NavLink to={"/CatInfo"}>
+            <button className="bg-white border border-white hover:text-white  text-orange-500 font-semibold px-6 py-3 rounded-lg hover:bg-orange-500 transition-all duration-200 max-[1175px]:hover:bg-transparent max-[1175px]:hover:text-orange-500 max-[1175px]:bg-transparent max-[1175px]:hover:border-orange-500 max-[1175px]:border-orange-300 max-[1175px]:hover:border-2">
+              Info →
+            </button>
+          </NavLink>
         </div>
       </div>
     </>
