@@ -20,8 +20,8 @@ export function HomePage() {
           <Nav />
         </div>
         <div className="w-6/12 h-full bg-orange-900 flex items-center justify-center pt-20 max-[650px]:pt-2   max-[650px]:w-full ">
-          <div className=" max-w-[600px] max-[650px]:w-full max-[650px]:px-4 w-8/12 h-[700px]  max-[650px]:pt-20 ">
-            <div className="w-full h-3/6  flex items-center justify-center ">
+          <motion.div  initial={{opacity:0,y:100}} animate={{opacity:1,y:0}} transition={{duration:1,ease:"easeInOut",delay:0.2}} className=" max-w-[600px] max-[650px]:w-full max-[650px]:px-4 w-8/12 h-[700px]  max-[650px]:pt-20 ">
+            <div className="w-full h-3/6  flex items-center justify-center  select-none">
               <img src={DogImage} alt="DogImage" />
             </div>
             <div className="w-full h-3/6  text-center py-5">
@@ -64,19 +64,25 @@ export function HomePage() {
                 </NavLink>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="h-full w-6 bg-gradient-to-r max-[650px]:bg-gradient-to-b from-orange-900 to-orange-400 max-[650px]:w-full "></div>
 
-        <div className="w-6/12 h-full bg-orange-400 flex items-center justify-center pt-20 max-[650px]:pt-2 max-[650px]:w-full">
-          <div className=" max-w-[600px] w-8/12 h-[700px] max-[650px]:w-full max-[650px]:px-4  ">
-            <div className="w-full h-3/6  flex items-center justify-center ">
+        <div className=" w-6/12 h-full bg-orange-400 flex items-center justify-center pt-20 max-[650px]:pt-2 max-[650px]:w-full">
+
+
+          <motion.div  initial={{opacity:0,y:100}} animate={{opacity:1,y:0}} transition={{duration:1,ease:"easeInOut",delay:0.2}} className=" max-w-[600px] w-8/12 h-[700px] max-[650px]:w-full max-[650px]:px-4  ">
+            <div className="w-full h-3/6  flex items-center justify-center select-none ">
               <img
                 src={CatImage}
                 alt="catImage"
                 className="min-w-96 max-w-96"
               />
             </div>
+
+
+
+
             <div className="w-full h-3/6  text-center py-5">
               <h1 className="text-3xl font-semibold text-white ">Cat World</h1>
 
@@ -116,7 +122,7 @@ export function HomePage() {
                 </NavLink>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </>

@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import Random from "../../public/icon/random.svg";
 import BackBTN from "../../public/icon/back-buttons-orange.svg";
-
+import {motion} from "motion/react"
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -23,11 +23,11 @@ export function CAtInfo() {
     <>
       <div className="w-full h-full flex items-center justify-center min-h-[900px]">
         <NavLink to={"/CatPage"}>
-          <button className="absolute top-4 left-4 select-none">
+          <motion.button initial={{opacity:0,y:-100}} animate={{opacity:1,y:0}} transition={{duration:1,ease:"easeInOut",delay:0.2}} className="absolute top-4 left-4 select-none">
             <img src={BackBTN} alt={BackBTN} className="w-10" />
-          </button>
+          </motion.button>
         </NavLink>
-        <div className="w-10/12 max-w-[600px] max-h-[630px] bg-orange-500 h-4/6 rounded-lg flex items-center justify-start pt-5 flex-col">
+        <motion.div initial={{opacity:0,y:100}} animate={{opacity:1,y:0}} transition={{duration:1,ease:"easeInOut",delay:0.2}}  className="w-10/12 max-w-[600px] max-h-[630px] bg-orange-500 h-4/6 rounded-lg flex items-center justify-start pt-5 flex-col">
           <div className="w-[90%] h-5/6 bg-white rounded-xl p-5 overflow-auto bg-[url('./assets/catInfoImage/catInfoImage.png')] bg-cover">
             <h1 className="text-orange-500 text-2xl font-bold mb-3">
               Info: {count}
@@ -47,7 +47,7 @@ export function CAtInfo() {
           >
             <img src={Random} alt="random" />
           </button>
-        </div>
+        </motion.div>
       </div>
     </>
   );

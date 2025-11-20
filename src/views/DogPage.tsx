@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import DogPageImage from "../assets/DogPage/DogPageImage.png";
 import GoBack from "../../public/icon/back.svg";
-
+import { motion } from "motion/react";
 export function DogPage() {
   return (
     <>
@@ -9,12 +9,12 @@ export function DogPage() {
         className="w-full h-screen min-h-[900px] bg-white bg-no-repeat bg-right-bottom bg-contain flex items-center justify-start max-[500px]:items-start"
         style={{ backgroundImage: `url(${DogPageImage})` }}
       >
-        <button className="absolute top-5 left-4">
+        <motion.button initial={{opacity:0,y:-100}} animate={{opacity:1,y:0}} transition={{duration:1,ease:"easeInOut",delay:0.2}} className="absolute top-5 left-4">
           <NavLink to={"/HomePage"}>
             <img className="w-10" src={GoBack} alt={GoBack} />
           </NavLink>
-        </button>
-        <div className="w-[600px] h-[500px] bg-red-500 text-white flex flex-col justify-center items-start p-10 rounded-r-3xl shadow-lg max-[1175px]:shadow-none max-[1175px]:bg-opacity-40 max-[1175px]:bg-white  max-[400px]:bg-transparent ">
+        </motion.button>
+        <motion.div initial={{opacity:0,x:-200}} animate={{opacity:100,x:0}} transition={{duration:1,ease:"easeInOut",delay:0.2}} className="w-[600px] h-[500px] bg-red-500 text-white flex flex-col justify-center items-start p-10 rounded-r-3xl shadow-lg max-[1175px]:shadow-none max-[1175px]:bg-opacity-40 max-[1175px]:bg-white  max-[400px]:bg-transparent ">
           <h2 className="text-4xl font-bold mb-4 max-[1175px]:text-red-500 ">
             Dogs Can Smell Time!
           </h2>
@@ -28,7 +28,7 @@ export function DogPage() {
               Info →
             </button>
           </NavLink>
-        </div>
+        </motion.div>
       </div>
     </>
   );
